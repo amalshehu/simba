@@ -7,6 +7,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
       rel="stylesheet"
     />
+
     <style>
       .container {
         max-width: 720px;
@@ -16,19 +17,8 @@
   <body>
     <div id="App" class="container"></div>
     <script type="module" src="./app.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: 'AIzaSyDsjzzwlqFSTNNxhLSvDXdp3xnzJn-eOyg',
-        authDomain: 'simba-test-repo.firebaseapp.com',
-        databaseURL: 'https://simba-test-repo.firebaseio.com',
-        projectId: 'simba-test-repo',
-        storageBucket: 'simba-test-repo.appspot.com',
-        messagingSenderId: '1126097166'
-      };
-      firebase.initializeApp(config);
-    </script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script> -->
+    <script type="module" src="./storage/firebase.js"></script>
   </body>
 </html>
